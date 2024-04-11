@@ -1,17 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CJ's on it!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <section class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-    <h1>Hello World, this will be CJ's landscaping website</h1>
-   </section>
+    <link rel="stylesheet" href="style.css" type="text/css">
 
     
+    <!--====TAILWIND ==?????NEED TO FIX THIS, SHOULD WORK THROUGH NPM -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+
+    <!--=================================-->
+    <!--==========  Nav Bar =============-->
+    <!--=================================-->
+
+
+    <header class="bg-bg pt-10 lg:pt-8 pb-6 lg:pb-16">
+        <div class="container">
+            <nav class="flex justify-between font-medium">
+                <a href="index.html">CJ's On It!</a>
+                <a class="hidden md:inline" href="index.html">Home</a>
+                <a class="hidden md:inline" href="work.html">Work</a>
+                <a class="hidden md:inline" href="contact.html">Contact</a>
+                <button id="mobile_menu_trigger" class="inline md:hidden"><svg width="24" height="15"
+                        viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="24" height="4" fill="#201F27" />
+                        <rect x="12" y="10.5" width="12" height="4" fill="#201F27" />
+                    </svg></button>
+            </nav>
+        </div>
+    </header>
+
+        <!--============HERO / WOOD BG=====================-->
+
+
+        <div class="container">
+
+            <section class="bg-full" style="background-image: url('../img/BG2.JPEG');">
+
+                <div class="text-4xl font-medium leading-snug lg:mb-16">
+                    <h1 id="JCS" class="text-5xl shadow-xl mb-2 text-center pt-24 mt-32">
+                        CJ's On It </h1>
+                </div>
+                <p class="text-center text-xl mb-32 pb-32">Est. 2022</p>
+
+
+
+            </section>
+        </div>
+
+
+        <!--=============INTRO STATEMENT====================-->
+
+
+        <div class="container  pt-16 lg:py-16 grid grid-cols-12 gap-8">
+            <div class="col-span-12 md:col-span-12 lg:col-span-8 z-10">
+
+                <ul>
+                    <li class="text-2xl md:text-3xl lg:text-4xl font-medium leading-snug mb-8 lg:mb-16">
+                        <p class="font-large mb-10 ml-0 ">
+                            Custom Woodwork <br> Designs
+                        </p>
+                    </li>
+                    <li class="text-2xl md:text-3xl lg:text-4xl font-medium leading-snug mb-8 lg:mb-16">
+                        <p class="font-large mb-10 ml-0">
+                            Development & <br> Remodel
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--=================================-->
+        <!--========= INTRO END =============-->
+        <!--=================================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div class="">
+              <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+            </div>
+            <div>
+              <div class="text-xl font-medium text-black">ChitChat</div>
+              <p class="text-slate-500">You have a new message!</p>
+            </div>
+          </div>
+
+
+
+
+
+            <!--=================================-->
+            <!--==== Mobile Menu ================-->
+            <!--=================================-->
+
+    <div id="mobile_menu" class="w-full bg-primary text-white flex flex-col justify-center text-2xl space-y-4 fixed right-0 translate-x-full top-0  bottom-0 z-50 pl-8 transition-transform duration-500">
+        
+        <button id="mobile_menu_close" class="absolute top-10 right-4 flex    items-center text-base">close
+            <svg class="ml-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.12109" y="0.454041" width="24" height="3" transform="rotate(45 2.12109 0.454041)"
+                    fill="#fff" />
+                <rect y="17.4246" width="24" height="3" transform="rotate(-45 0 17.4246)" fill="#fff" />
+            </svg>
+        </button>
+
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+
+    </div>
+
+<!--==== Main JS ====================-->
+<script src="../js/scripts.js"></script>
+
+
 </body>
+
 </html>
