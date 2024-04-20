@@ -1,5 +1,8 @@
 body {
-    background-image: url('/img/Wallpapers.jpg');
-    background-repeat:repeat-x;
+    background-image: url('/img/wallpaper1.jpg');
+    
 }
 
+img {
+    border: 4px solid white; 
+}
